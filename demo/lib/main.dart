@@ -12,289 +12,44 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: Row(
           children: [
             Expanded(
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.pink,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.amber,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.orange,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.blue,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  redi(color: Colors.red, Flex: 2),
+                  redi(color: Colors.blue, Flex: 3),
+                  redi(color: Colors.green),
                 ],
               ),
             ),
             Expanded(
-              child: Row(
+              child: Column(
                 children: [
                   Expanded(
-                    child: Container(
-                      color: Colors.black,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.amber,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.purpleAccent,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ],
-                            ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              redi(color: Colors.pinkAccent, Flex: 3),
+                              redi(color: Colors.cyan),
+                            ],
                           ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.purple,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.deepOrange,
-                                  ),
-                                ),
-                              ],
-                            ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              redi(color: Colors.purple),
+                              redi(color: Colors.amber, Flex: 3),
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.orange,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      color: Colors.red,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.pink,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.yellow,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      color: Colors.black,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.cyan,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.amberAccent,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.blueAccent,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.blueGrey,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.amber,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.orange,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.pink,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.red,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    color: Colors.blueAccent,
-                                    child: Column(
-                                      children: [
-                                        Expanded(
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.black54,
-                                              )),
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.cyanAccent,
-                                              )),
-                                            ],
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.green,
-                                              )),
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.lightBlueAccent,
-                                              )),
-                                            ],
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 2,
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.lime,
-                                              )),
-                                              Expanded(
-                                                  child: Container(
-                                                color: Colors.tealAccent,
-                                              )),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  redi(color: Colors.black),
+                  redi(color: Colors.brown),
                 ],
               ),
             ),
@@ -303,4 +58,15 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget redi({Flex, color}) {
+  return Expanded(
+      flex: Flex ?? 1,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          color: color,
+        ),
+      ));
 }
